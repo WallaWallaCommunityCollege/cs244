@@ -3,7 +3,7 @@ function myTasks(grunt) {
     grunt.initConfig({
         browserify: {
             main: {
-                src: {'client/app.js'},
+                src: ['client/app.js'],
                 dest: 'dist/app.js'
             }
         },
