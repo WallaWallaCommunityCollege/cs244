@@ -1,4 +1,4 @@
-const colourLoversAPI = 'http://www.colourlovers.com/api/colors';
+const colourLoversAPI = '//www.colourlovers.com/api/colors';
 $(document).ready(() => {
     $('#searchBtn').on('click', () => {
         let searchText = $('#searchText').val();
