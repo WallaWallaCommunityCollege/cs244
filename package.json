@@ -4,6 +4,7 @@
   "description": "blah",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npx grunt",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
