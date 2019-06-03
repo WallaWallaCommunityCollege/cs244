@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "npx grunt",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha --recursive tests/",
+    "lint": "npx eslint \"client/**/*.js\""
   },
   "author": "Michael Cummings",
   "license": "ISC",
@@ -20,9 +21,18 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "gulp-copy": "^4.0.1",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "node": "^12.3.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "gulp": "^4.0.2",
+    "mocha": "^6.1.4"
+  },
+  "engines": {
+    "node": "^10.15.0"
   }
 }
